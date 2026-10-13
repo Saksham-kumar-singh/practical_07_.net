@@ -1,0 +1,12 @@
+
+<h2>Feedback Management</h2>
+
+@using (Html.BeginForm("Index", "Feedback", FormMethod.Post))
+{
+    @Html.Partial("_FeedbackForm", Model)
+}
+
+@if (ViewBag.Message != null)
+{
+    <h3>@ViewBag.Message</h3>
+}
